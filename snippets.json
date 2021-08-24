@@ -1,0 +1,19 @@
+{
+  "attribute_type": {
+    "prefix": "type",
+    "body": "type=\"${1|text,tel,email|}\"",
+    "description": "Type of button"
+  },
+  "button": {
+    "prefix": "button",
+    "body": "<button${1: type=\"${2|text,tel|}\"}>\n  $0\n<button>",
+    "description": "按钮",
+    "scope": "typescript,html"
+  },
+  "stu-input": {
+    "prefix": "t-input",
+    "body": "<tui-input${1: [(ngModel)]=\"\"}>$0<tui-input>",
+    "description": "tui-input",
+    "scope": "html"
+  }
+}

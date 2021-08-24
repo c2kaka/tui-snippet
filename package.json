@@ -1,0 +1,40 @@
+{
+  "name": "mock-name",
+  "version": "1.0.0",
+  "description": "Generate a snippet extensions for vscode",
+  "scripts": {
+    "build": "vscode-snippet-generator",
+    "build:i18n": "vscode-snippet-generator --i18nTpl=\"{zh-CN}({en-US})\"",
+    "build:zh-CN": "vscode-snippet-generator --i18n=zh-CN --outFile=snippets-zh-CN.json",
+    "build:en-US": "vscode-snippet-generator --i18n=en-US --outFile=snippets-en-US.json",
+    "release": "npm run build && vsce package"
+  },
+  "icon": "icon.png",
+  "publisher": "cipchk",
+  "license": "MIT",
+  "keywords": [
+    "vscode",
+    "vscode snippet"
+  ],
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vscode-snippet-generator": "^1.1.0"
+  }
+}
