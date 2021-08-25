@@ -1,7 +1,7 @@
 {
-  "name": "mock-name",
+  "name": "TUI-Snippets",
   "version": "1.0.0",
-  "description": "Generate a snippet extensions for vscode",
+  "description": "Snippets based on TUI",
   "scripts": {
     "build": "vscode-snippet-generator",
     "build:i18n": "vscode-snippet-generator --i18nTpl=\"{zh-CN}({en-US})\"",
@@ -10,7 +10,7 @@
     "release": "npm run build && vsce package"
   },
   "icon": "icon.png",
-  "publisher": "cipchk",
+  "publisher": "fanoykaka",
   "license": "MIT",
   "keywords": [
     "vscode",

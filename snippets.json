@@ -1,18 +1,31 @@
 {
+  "attribute_prefix": {
+    "prefix": "prefix",
+    "body": "prefix=\"\"",
+    "description": "Prefix",
+    "scope": "html"
+  },
+  "attribute_suffix": {
+    "prefix": "suffix",
+    "body": "suffix=\"\"",
+    "description": "Suffix",
+    "scope": "html"
+  },
   "attribute_type": {
     "prefix": "type",
     "body": "type=\"${1|text,tel,email|}\"",
-    "description": "Type of button"
+    "description": "Type of button",
+    "scope": "html"
   },
-  "button": {
-    "prefix": "button",
-    "body": "<button${1: type=\"${2|text,tel|}\"}>\n  $0\n<button>",
-    "description": "按钮",
-    "scope": "typescript,html"
+  "tui-input-number": {
+    "prefix": "t-input-number",
+    "body": "<tui-input-number\n ${1: name=\"\"}\n ${2: [tuiMinValue]=\"0\"}\n ${3: [tuiMaxValue]=\"10\"}\n ${4: [step]=\"1\"}\n ${5: [(ngModel)]=\"\"}\n></tui-input-number>",
+    "description": "tui-input-number",
+    "scope": "html"
   },
-  "stu-input": {
+  "tui-input": {
     "prefix": "t-input",
-    "body": "<tui-input${1: [(ngModel)]=\"\"}>$0<tui-input>",
+    "body": "<tui-input${1: [(ngModel)]=\"\"}${2: name=\"\"}${3: placeholder=\"\"}></tui-input>",
     "description": "tui-input",
     "scope": "html"
   }

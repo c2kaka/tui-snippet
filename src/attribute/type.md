@@ -1,6 +1,7 @@
 ---
 prefix: type
 description: Type of button
+scope: html
 ---
 
 ```html
