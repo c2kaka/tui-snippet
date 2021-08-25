@@ -1,8 +1,20 @@
 {
+  "attribute_color": {
+    "prefix": "color-icon",
+    "body": "color=\"${1|danger,primary,warning,success,info,default,secondary,mute,disabled,reverse|}\"",
+    "description": "Icon color, support 'danger', 'primary', 'warning', 'success', 'info', 'default', 'secondary', 'mute', 'disabled', 'reverse' or arbitrary color.",
+    "scope": "html"
+  },
   "attribute_prefix": {
     "prefix": "prefix",
     "body": "prefix=\"\"",
     "description": "Prefix",
+    "scope": "html"
+  },
+  "attribute_size": {
+    "prefix": "size",
+    "body": "size=\"${1|sm,md,lg|}\"",
+    "description": "size(sm,md,lg)",
     "scope": "html"
   },
   "attribute_suffix": {
@@ -11,10 +23,52 @@
     "description": "Suffix",
     "scope": "html"
   },
+  "attribute_tuiBtn": {
+    "prefix": "tuiBtn",
+    "body": "tuiBtn=\"${1|primary,success,danger,warning,default|}\"",
+    "description": "tui button type",
+    "scope": "html"
+  },
+  "attribute_tuiBtnIcon": {
+    "prefix": "tuiBtnIcon",
+    "body": "tuiBtnIcon=\"\"",
+    "description": "Button icon name, optional.",
+    "scope": "html"
+  },
+  "attribute_tuiBtnLoading": {
+    "prefix": "tuiBtnLoading",
+    "body": "[tuiBtnLoading]=\"loading\"",
+    "description": "Add loading state to button if set true.",
+    "scope": "html"
+  },
+  "attribute_tuiBtnOutline": {
+    "prefix": "tuiBtnOutline",
+    "body": "tuiBtnOutline",
+    "description": "Add outline to button",
+    "scope": "html"
+  },
+  "attribute_tuiIcon": {
+    "prefix": "tuiIcon",
+    "body": "tuiIcon=\"${1|abstract,ai,aim,analysis,analyze-detail,analyze,angle-double-down-bold,angle-double-down,angle-double-left-bold,angle-double-left,angle-double-right-bold,angle-double-right,angle-double-up-bold,angle-double-up,angle-down-bold,angle-down-circle,angle-down,angle-left-bold,angle-left,angle-right-bold,angle-right-circle,angle-right,angle-up-bold,angle-up-circle,angle-up,arrow-left,arrow-right,arrows-circle,arrows,assign,association,audit-config,audit,avator,back,ban,bell,bigdata,book,calendar,cards,caret-down,caret-left,caret-right,caret-up,catalog,chain,check-bold,check-circle,check-detail,check,chip,circle,clock,cloud,cluster,cny-arrow-down,cny-arrow-up,cny-circle,collapse,collapser,collection,column,compare,complement,component,config-file,config,connect,connection,console,copy,correct,create-app,create,creating,creator,cross-bold,cross-circle,cross,cube,dashboards,data-graph,data-map,data-set,data-task,data,database-gear-o,database-gear,database-lock,database,dataload,datasync,debug-start,debug-terminate,debug,delete,dependency,detail,dev,develop,dict,dictionary,dot-circle,dots,download,drag-pad,drag-select,drawser,echometer,edit-circle,edit-dashed,edit,erase,excel,exclamation-circle,execution,executor,exit,export,eye-closed,eye-open,eye,failure,favorites,field,file-add,file-copy,file,files,filter,finance,flatdisk,folder-add,folder-close,folder-in,folder-manage,folder-move,folder-open,folder-out,folder,format,forward,fullscreen,function,gateway,gear-o,gear-square,gear,gitlab,globe,governance,hand,handle,hdfs,help-o,help,hidescreen,image,import,info-circle,info,instance-entrance,instance-list,instance-shortcut,instance-template-config,instance,institution-add,institution,integrate,java,json,key,layout,lens-minus,lens-plus,lineage-analysis,list-skew,list-solid,list,loading,lock-locked,lock-o,lock-unlocked,lock,log-clock,lower-frame,machine-learning,magnifier,mail,manage,management,map,market,mask,maximize,media-repeat,menu-collapse,menu-expand,metadata,metric-instance,metric,micro-address,minimize,minus-bold,minus-square,minus,model,monitor,more-arrow,more-dots,more,move,namespace,network-port,network,notification,notify-settings,online,operation,package,panel-add,paper-clip,paper-stamp,param,parameter,params,partial-arrow-down,partial-run-add,partial-run,paste,pay-cost,pay-cycle,pay-num,pay-state,pencil-square,percent,performance-list,performance-overview,permission,phone,pile,plus-bold,plus-circle,plus-square,plus-thin,plus,port,position,power-off,preparing,procedure,process-management,process,product-perm,product,project-card,project-list,project-new,project,property-app,property-assign,property-auth,property-bill,property-category,property-cloud,property-component,property-cost,property-creator,property-datasource,property-date,property-duplicate,property-groups,property-instance,property-keyword,property-lines,property-name,property-package,property-path,property-pay,property-port,property-priority,property-project,property-server,property-share,property-size,property-team,property-time,property-users,property-version,property-visibility,property,proportion,protection,publish,quality-report,quality-rule,quality-task,quality-template,query,rack,redo,reference,refresh,remove,rename,repeat,report,reset-password,return,rule,ruler,run-add,run-chain,run,safety,save-as,save,schedule,script-empty,script,search-square,search,security,server,service,setting,share-circle,share-config,shield-key,shield-tick,shield,sim-card,siren,sns-qq-circle,sns-wechat-circle,sql-editor-logo,sql,stamp,standard,star-o,star-three-stripes,star,start,statistic,status-deleted,status-error,status-inprogress,status-preparing,status-reopen,status-resolved,status-running,status-stopped,status-terminated,status-terminating,status-undeployed,status-unknown,status-waiting,status,stop,subscribe-add,subscribe-cancel,subscribe,system,table,tag,task-list,taskflow,tasks,template-default-high,template-default-low,template-default-medium,terminal,terminate,text,theme,third-party,thumb-up-o,thumb-up,timer,transfer,trash-circle,trash,tree,unbind,undo,unpublish,unresolved,upgrade,upload,user-admin,user-arrow,user-group-o,user-group,user-manage,user-o,user-slash,user,validating,verify,version,view-detail,view-type-list,view,wallet,window,withdraw,workflow,workspace,wrench|}\"",
+    "description": "Icon name.",
+    "scope": "html"
+  },
   "attribute_type": {
     "prefix": "type",
     "body": "type=\"${1|text,tel,email|}\"",
     "description": "Type of button",
+    "scope": "html"
+  },
+  "tui-button": {
+    "prefix": "t-button",
+    "body": "<button${1: tuiBtn=\"${2|primary,success,danger,warning,default|}\"}>$0</button>",
+    "description": "tui button",
+    "scope": "html"
+  },
+  "tui-icon": {
+    "prefix": "t-icon",
+    "body": "<svg${1: [tuiIcon]=\"icon\"}></svg>",
+    "description": "tui icon",
     "scope": "html"
   },
   "tui-input-number": {
