@@ -1,8 +1,26 @@
 {
+  "attribute_allowClear": {
+    "prefix": "allowClear",
+    "body": "allowClear",
+    "description": "allow clear content",
+    "scope": "html"
+  },
   "attribute_color": {
     "prefix": "color-icon",
     "body": "color=\"${1|danger,primary,warning,success,info,default,secondary,mute,disabled,reverse|}\"",
     "description": "Icon color, support 'danger', 'primary', 'warning', 'success', 'info', 'default', 'secondary', 'mute', 'disabled', 'reverse' or arbitrary color.",
+    "scope": "html"
+  },
+  "attribute_direction": {
+    "prefix": "direction",
+    "body": "direction=\"${1|top,bottom|}\"",
+    "description": "overlay direction(top|bottom)",
+    "scope": "html"
+  },
+  "attribute_mode": {
+    "prefix": "mode",
+    "body": "mode=\"${1|single,multiple|}\"",
+    "description": "select mode(single|multiple)",
     "scope": "html"
   },
   "attribute_prefix": {
@@ -81,6 +99,24 @@
     "prefix": "t-input",
     "body": "<tui-input${1: [(ngModel)]=\"\"}${2: name=\"\"}${3: placeholder=\"\"}></tui-input>",
     "description": "tui-input",
+    "scope": "html"
+  },
+  "tui-multi-select": {
+    "prefix": "t-multi-select",
+    "body": "<tui-select\n ${1: name=\"\"}\n ${2: placeholder=\"\"}\n ${3: mode=\"multiple\"}\n ${4: [(ngModel)]=\"\"}\n ${5: (ngModelChange)=\"onSelectChange($event)\"}\n ${6: allowClear}\n>\n  <tui-select-option-all></tui-select-option-all>\n  <tui-select-option\n    *ngFor=\"let option of objectOptions\"\n    [value]=\"option.value\"\n  >\n    <span>{{ option.label }}</span>\n  </tui-select-option>\n</tui-select>",
+    "description": "tui multi select component",
+    "scope": "html"
+  },
+  "tui-select-with-search": {
+    "prefix": "t-select-search",
+    "body": "<tui-select\n ${1: allowSearch}\n ${2: searchKey=\"label\"}\n ${3: name=\"\"}\n ${4: placeholder=\"\"}\n ${5: [(ngModel)]=\"\"}\n ${6: (ngModelChange)=\"onSelectChange($event)\"}\n ${7: allowClear}\n>\n  <tui-select-option\n    *ngFor=\"let option of objectOptions\"\n    [label]=\"option.label\"\n    [value]=\"option.value\"\n    [disabled]=\"option.disabled\"\n  >\n    {{ option.label }}\n  </tui-select-option>\n</tui-select>",
+    "description": "tui select component with search",
+    "scope": "html"
+  },
+  "tui-select": {
+    "prefix": "t-select",
+    "body": "<tui-select\n ${1: name=\"\"}\n ${2: placeholder=\"\"}\n ${3: [(ngModel)]=\"\"}\n ${4: (ngModelChange)=\"onSelectChange($event)\"}\n ${5: allowClear}\n>\n  <tui-select-option\n    *ngFor=\"let option of objectOptions\"\n    [value]=\"option.value\"\n    [disabled]=\"option.disabled\"\n  >\n    {{ option.label }}\n  </tui-select-option>\n</tui-select>",
+    "description": "tui select component",
     "scope": "html"
   }
 }
